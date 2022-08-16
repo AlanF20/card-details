@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./public/styles/styles.css">
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__backCard">
+        <img class="header__backCard-img" src="./public/img/bg-card-back.png" alt="" >
+        <div class="header__backCard-cvv">
+          <span>000</span>
+        </div>
+      </div>
+      <div class="header__frontCard">
+        <img src="./public/img/bg-card-front.png" alt="" class="header__frontCard-img">
+        <div class="header__frontCard-card">
+          <div class="header__frontCard-logo">
+            <img src="./public/img/card-logo.svg" alt="Logo" class="header__frontCard-logo-img">
+          </div>
+          <div class="header__frontCard-account">
+            <span class="header__frontCard-account-number">0000</span>
+            <span class="header__frontCard-account-number">0000</span>
+            <span class="header__frontCard-account-number">0000</span>
+            <span class="header__frontCard-account-number">0000</span>
+          </div>
+          <div class="header__frontCard-data">
+            <p class="header__frontCard-data-name">Alan Flores</p>
+            <p class="header__frontCard-data-exp">00/00</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <form action="" class="main__data">
+        <label class="main__data-label" for="Cardholder">CARDHOLDER NAME<input class="main__data-Cardholder" type="text" name="Cardholder" id="Cardholder" placeholder="e.g Jane Appleseed"></label>
+        <label class="main__data-label" for="Cardnumber">CARD NUMBER<input class="main__data-Cardnumber"  type="tel" name="Cardnumber" id="Cardnumber" placeholder="e.g 1234 5678 9123 0000" maxlength="16"></label>
+        <div class="main__data-exp">
+          <label class="main__data-label Month" for="Month">EXP. DATE<input class="main__data-Month" type="tel"  name="Month" id="Month" placeholder="MM" maxlength="2" size="16"></label>
+          <label class="main__data-label Year" for="Year">(MM/YY) <input class="main__data-Year" type="tel"  name="Year" id="Year" placeholder="YY" maxlength="2"></label>
+          <label class="main__data-label Cvc" for="CVC">CVC <input  class="main__data-Cvc" type="tel"  name="CVC" id="Cvc" placeholder="e.g 123" maxlength="3"></label>
+        </div>
+        <button class="main__data-confirm">Confirm</button>
+      </form>
+    </main>
+  </body>
+</html>
